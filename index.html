@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Audio Player</title>
+		<link rel="icon" href="data:,">
+		<link rel="stylesheet" href="assets/main.css">
+	</head>
+
+	<body>
+		<div class="wrapper-player">
+			<div class="player-main">
+				<audio id="player" src=""></audio>
+				<!--  -->
+				<div class="player-controls">
+					<div>
+						<button id="btn-rewind-10">-10с</button>
+						<button id="btn-previous-track"><</button>
+						<button id="btn-play-pause">Play</button>
+						<button id="btn-next-track">></button>
+						<button id="btn-forward-30">+30с</button>
+					</div>
+					<!--  -->
+					<div>
+						<button id="btn-speed-0.5">0.5x</button>
+						<button id="btn-speed-0.5">0.8x</button>
+						<button id="btn-speed-1.0">1.0x</button>
+						<button id="btn-speed-1.2">1.2x</button>
+						<button id="btn-speed-1.4">1.4x</button>
+						<button id="btn-speed-1.4">1.6x</button>
+						<button id="btn-speed-1.8">1.8x</button>
+						<button id="btn-speed-2.0">2.0x</button>
+					</div>
+				</div>
+				<!--  -->
+				<div class="progress-player">
+					<input type="range" id="slider" min="0" value="0">
+					<div id="time-indicator">
+						<span>00:00:00</span>
+					</div>
+					<div>
+						<span id="current-time">00:00:00</span>
+						<span>/</span>
+						<span id="total-time">00:00:00</span>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<div class="player-list">
+				<ul id="playlist">
+					<!-- here will be generate list of your audio tracks -->
+				</ul>
+			</div>
+			<!--  -->
+			<div class="title">
+				<span>
+					AudioPlayer:
+					<small
+						style="font-size: 12px; 
+						font-weight: 100;
+						text-transform: lowercase;"
+					>v1.3</small>
+				</span>
+			</div>
+		</div>
+		
+
+		<script src="js/data.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
