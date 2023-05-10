@@ -239,7 +239,20 @@ slider.addEventListener('mousedown', () => {
 slider.addEventListener('mouseup', () => {
 	isSeeking = false;
 	hideTimeIndicator();
-	// Если трек не выбран, сбросить положение ползунка к начальному значению
+	if (currentTrackIndex === -1) {
+		slider.value = initialSliderValue;
+	}
+});
+
+// for mobile devices
+slider.addEventListener('touchstart', (e) => {
+	isSeeking = true;
+	showTimeIndicator();
+});
+
+slider.addEventListener('touchend', (e) => {
+	isSeeking = false;
+	hideTimeIndicator();
 	if (currentTrackIndex === -1) {
 		slider.value = initialSliderValue;
 	}
