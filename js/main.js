@@ -267,7 +267,7 @@ function updateTimeIndicator(time) {
 
 function showTimeIndicator() {
 	timeIndicator.style.display = 'flex';
-	timeIndicator.style.background = 'rgba(0, 0, 0, 0.5)';
+	timeIndicator.style.background = 'rgba(0, 0, 0, 0.7)';
 }
 
 function hideTimeIndicator() {
