@@ -180,8 +180,8 @@ body {
 .wrapper-player .player-main .player-controls div:first-child button,
 .wrapper-player .player-main .player-controls div:last-child button {
 	border-radius: 50%;
-	width: 35px;
-	height: 35px;
+	width: 45px;
+	height: 45px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -207,8 +207,8 @@ body {
 	font-size: 10px;
 	font-weight: bold;
 	text-align: center;
-	width: 35px;
-	height: 35px;
+	width: 40px;
+	height: 40px;
 	margin: 0 3px 0;
 }
 
@@ -226,11 +226,11 @@ body {
 	font-weight: bold;
 }
 
-.wrapper-player .player-main .player-controls div:first-child button#btn-next-track {
+.wrapper-player .player-main .player-controls div:first-child button#btn-previous-track {
 	margin-right: 5px;
 }
 
-.wrapper-player .player-main .player-controls div:first-child button#btn-previous-track {
+.wrapper-player .player-main .player-controls div:first-child button#btn-next-track {
 	margin-left: 5px;
 }
 
@@ -447,7 +447,7 @@ input[type=range]::-ms-track {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 10px 5px 10px 5px;
+	padding: 15px 10px 15px 10px;
 	background: transparent;
 	-webkit-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
