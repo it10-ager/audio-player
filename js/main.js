@@ -62,6 +62,16 @@ function updateTimeDisplay() {
 	let totalHours = Math.floor(player.duration / 3600);
 	let totalMinutes = Math.floor((player.duration % 3600) / 60);
 	let totalSeconds = Math.floor(player.duration % 60);
+	let currentSecondsInd = Math.floor(player.currentTime);
+	let totalSecondsInd = Math.floor(player.duration);
+
+	// for seconds
+	if (!isNaN(player.duration)) {
+		let currentIndicator = document.getElementById('seconds-current-indicator');
+		let totalIndicator = document.getElementById('seconds-total-indicator');
+		currentIndicator.innerText = `(${currentSecondsInd})`;
+		totalIndicator.innerText = `(${totalSecondsInd})`;
+	}
 
 	if (!isNaN(player.duration))
 		totalTime.innerHTML = `${totalHours < 10 ? '0' : ''}${totalHours}:${totalMinutes < 10 ? '0' : ''}${totalMinutes}:${totalSeconds < 10 ? '0' : ''}${totalSeconds}`;
